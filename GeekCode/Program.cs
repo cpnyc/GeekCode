@@ -6,7 +6,7 @@ namespace GeekCode
     {
         static void Main(string[] args)
         {
-            new IntegerToBinary().Test();
+            new SortSegmentsOfString().Test();
         }
 
     }
