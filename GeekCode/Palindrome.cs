@@ -4,13 +4,12 @@ namespace GeekCode
 {
     class Palindrome
     {
-
         /*
          *  string str = "civic";
          *  ValidatePalindrome(str);
          */
 
-        private static void ValidatePalindrome(string str)
+        public static void ValidatePalindrome(string str)
         {
             char[] cArry = str.ToCharArray();
             int strLen = cArry.Length;
@@ -18,9 +17,18 @@ namespace GeekCode
             for (int i = 0; i < len; i++)
             {
                 if (cArry[i] != cArry[strLen - i - 1])
+                {
+                    Console.WriteLine("This word {0} is NOT a palindrome", str);
                     return;
+                }
             }
-            Console.WriteLine("This word {0} is palindrome", str);
+            Console.WriteLine("This word {0} is a palindrome", str);
+        }
+
+        public void Test()
+        {
+            string str = "civic";
+            ValidatePalindrome(str);
         }
     }
 }
