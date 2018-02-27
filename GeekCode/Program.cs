@@ -7,6 +7,7 @@ namespace GeekCode
         static void Main(string[] args)
         {
             //new SortSegmentsOfString().Test();
+            //new KDistanceIntegerList().Test();
             int[] a = new[] {82921272,
                 110219722,
                 162495938,
@@ -20,6 +21,7 @@ namespace GeekCode
                 959094281};
             var count = moves(a);
             Console.WriteLine(count);
+            
         }
 
         static int moves(int[] a)

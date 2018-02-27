@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Text;
@@ -38,8 +39,12 @@ namespace GeekCode
                 for(int i =0; i<size; i++)
                 {
                     if (charCount[i, 0] > 0)
-                        sb.Append(Convert.ToChar(i + factor));
+                    {
+                        for(int j=0;j<charCount[i,0]; j++)
+                            sb.Append(Convert.ToChar(i + factor));
+                    }
                 }
+                
                 return sb.ToString();
             }
         }
@@ -93,7 +98,7 @@ namespace GeekCode
 
         public void Test()
         {
-            Console.WriteLine( sortSegments("SKLDJ092381FHAQWER")); 
+            Console.WriteLine( sortSegments("AZQF013452BAB")); 
         }
     }
 }
