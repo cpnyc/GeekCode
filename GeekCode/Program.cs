@@ -6,7 +6,7 @@ namespace GeekCode
     {
         static void Main(string[] args)
         {
-            new SortSegmentsOfString().Test();
+            new KDistanceIntegerList().Test();
         }
 
     }
